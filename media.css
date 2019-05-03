@@ -1,0 +1,151 @@
+@media screen and (max-width: 1230px)
+{
+    header .container
+    {
+        width: 950px;
+    }
+    #contenu
+    {
+        width: 950px;
+    }
+    #contact
+    {
+        margin-left: 625px;
+    }
+}
+
+@media screen and (max-width: 950px)
+{
+    header .container
+    {
+        width: 768px;
+    }
+    #contenu
+    {
+        width: 768px;
+    }
+    #contact
+    {
+        margin-left: 450px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    body
+    {
+        width: 100%;
+    }
+
+    /* HEADER */
+
+    header
+    {
+        height: auto;
+        width: 100%;
+    }
+    header .container
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+    header .container div
+    {
+        width: 250px;
+        margin: auto;
+    }
+    header nav
+    {
+        width: 300px;
+        margin: 0 auto 0 auto;
+    }
+    header nav li, header nav .selected
+    {
+        border: none;
+        padding-bottom: 20px;
+    }
+    header nav .selected
+    {
+        border-bottom: solid 3px #5CADD3;
+    }
+    nav li:hover
+    {
+        
+        border-bottom: solid 3px rgba(111, 193, 231, 0.493);
+        border-top: none;
+    }
+
+    /* CONTENU */
+
+    #contenu
+    {
+        margin: 130px auto;
+        width: 100%;
+    }
+
+    /* SLIDER */
+
+    #slider
+    {
+        display: none;
+    }
+    .slick-prev, .slick-next
+    {
+        display: none;
+    }
+    
+    /* SERVICES */
+
+    #flex_services
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #flex_services>div
+    {
+        width: 100%;
+    }
+    #titre_services
+    {
+        width: 100%;
+    }
+
+    /* PORTFOLIO */
+
+    #portfolio
+    {
+        width: 100%;
+    }
+    #portfolio>div:first-child
+    {
+        width: 100%;
+    }
+    .apercu .info
+    {
+        opacity: 1;
+    }
+
+    /* FORMULAIRE */
+
+    #formbackground
+    {
+        width: 100%;
+    }
+    #contact
+    {
+        margin-left: 52.5%;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    #formbackground
+    {
+        background: none;
+    }
+    #contact
+    {
+        margin: auto;
+        background-color: rgba(158, 158, 158, 0.363);
+    }
+}
