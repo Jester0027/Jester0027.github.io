@@ -358,7 +358,7 @@ article
 	background-color: rgb(223, 223, 223);
 	width: 100%;
 	padding: 15px 5px 12px 5px;
-	font-size: 0.95em;
+	font-size: 0.9em;
 	font-weight: bold;
 	color: rgb(92, 92, 92);
 }
@@ -374,7 +374,7 @@ article
 	position: absolute;
 	top: 100%;
     width: 20px;
-	left: 35px;
+	left: 30px;
 	cursor: default;
 }
 #fleche_portfolio
