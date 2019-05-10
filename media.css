@@ -188,12 +188,26 @@
 
 @media screen and (max-width: 667px)
 {
+    #slider
+    {
+        height: 30vh;
+    }
+    #slider .slick-list.draggable, #slider .slick-track
+    {
+        height: 30vh;
+    }
+    #slider img
+    {
+        height: 30vh;
+        object-fit: cover;
+    }
     #slider .webagency>div
     {
         margin-left: 35px;
         width: 15%;
         top: 15%;
     }
+
     #slider p
     {
         line-height: 1.1;

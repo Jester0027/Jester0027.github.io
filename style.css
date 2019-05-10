@@ -219,10 +219,6 @@ header nav ul li a
 	outline: none;
 	z-index: 1;
 }
-#slider>img
-{
-	object-fit: cover;
-}
 #slider>button:hover
 {
 	cursor: pointer;
