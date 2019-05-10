@@ -1,3 +1,10 @@
+@media screen and (max-width: 1600px)
+{
+    #slider
+    {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 1230px)
 {
     header .container
@@ -8,7 +15,7 @@
     {
         width: 950px;
     }
-    #slider .webagency div
+    #slider .webagency>div
     {
         margin-left: 75px;
         top: 25%;
@@ -101,7 +108,7 @@
     {
         padding-top: 118px;
     }
-    #slider .webagency div
+    #slider .webagency>div
     {
         margin-left: 50px;
         width: 350px;
@@ -181,10 +188,10 @@
 
 @media screen and (max-width: 667px)
 {
-    #slider .webagency div
+    #slider .webagency>div
     {
         margin-left: 35px;
-        width: 250px;
+        width: 15%;
         top: 15%;
     }
     #slider p
@@ -204,6 +211,7 @@
     #slider .webagency button
     {
         font-size: 0.8em;
+        width: 100px;
         padding: 5px 10px 5px 10px;
     }
     .slick-prev
