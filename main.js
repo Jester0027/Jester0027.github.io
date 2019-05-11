@@ -1,4 +1,9 @@
-$('#slider').slick();
+$('#slider').slick({
+    speed: 1250,
+    autoplay: true,
+    autoplaySpeed: 15000,
+    //dots: true,
+});
 $('.slick-prev').html('<');
 $('.slick-next').html('>');
 
@@ -7,10 +12,7 @@ const listePortfolio = document.getElementById('liste_portfolio').getElementsByT
 for(var i = 0 ; i < listePortfolio.length ; i++){
     listePortfolio[i].addEventListener("click", function(e){
         const flecheElt = document.getElementById('fleche_portfolio');
-        if(e.target.tagName == "IMG"){
-
-        }
-        else{
+        if(e.target.tagName != "IMG"){
             for(var j = 0 ; j < listePortfolio.length ; j++){
                 listePortfolio[j].className = "";
             }

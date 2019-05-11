@@ -190,50 +190,47 @@
 {
     #slider
     {
-        height: 300px;
+        height: 350px;
     }
     #slider .slick-list.draggable, #slider .slick-track
     {
-        height: 300px;
+        height: 350px;
     }
     #slider img
     {
-        height: 300px;
+        height: 200px;
         object-fit: cover;
     }
     #slider .webagency>div
     {
         margin-left: 35px;
-        width: 15%;
-        top: 15%;
+        width: 12%;
+        top: 10%;
     }
 
-    #slider p
-    {
-        line-height: 1.1;
-    }
     #slider .webagency h1
     {
         font-size: 1.2em;
-        padding-bottom: 5px;
     }
     #slider .webagency p
     {
         font-size: 0.70em;
-        padding-bottom: 5px;
     }
     #slider .webagency button
     {
         font-size: 0.8em;
-        padding: 5px 10px 5px 10px;
     }
     .slick-prev
     {
-        top: 63%;
+        top: 55%;
     }
     .slick-next
     {
-        top: 63%;
+        top: 55%;
+    }
+    #services
+    {
+        padding-top: 20px;
     }
     #formbackground
     {
@@ -253,18 +250,16 @@
     }
     #slider .webagency h1
     {
-        font-size: 1em;
         padding-bottom: 5px;
     }
     #slider .webagency p
     {
-        font-size: 0.7em;
         padding-bottom: 5px;
     }
     #slider .webagency button
     {
-        font-size: 0.7em;
         padding: 5px 10px 5px 10px;
+        margin-top: 5px;
     }
 }
 @media screen and (max-width: 320px)
