@@ -539,5 +539,9 @@ textarea
 	border-radius: 100%;
 	margin: auto;
 	margin-top: -12.5px;
+	border: solid 5px white;
+}
+#portfolio .round
+{
 	border: solid 5px #F5F5F5;
 }
