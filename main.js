@@ -1,11 +1,14 @@
 $('#slider').slick({
     speed: 1250,
     autoplay: true,
-    autoplaySpeed: 15000,
-    //dots: true,
+    autoplaySpeed: 5000,
+    dots: true,
+    pauseOnFocus: false,
+    pauseOnHover: true
 });
 $('.slick-prev').html('<');
 $('.slick-next').html('>');
+$('.slick-dots>li>button').html('');
 
 const listePortfolio = document.getElementById('liste_portfolio').getElementsByTagName('li');
 

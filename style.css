@@ -205,6 +205,10 @@ header nav ul li a
 {
 	cursor: pointer;
 }
+.slick-slide
+{
+	outline: none;
+}
 #slider>button
 {
 	background-color: rgba(56, 56, 56, 0.475);
@@ -234,6 +238,33 @@ header nav ul li a
 	top: 42%;
 	border-radius: 100% 0 0 100%;
 	padding-right: 35px;
+}
+ul.slick-dots
+{
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	bottom: 0px;
+	background: rgba(143, 143, 143, 0.295);
+}
+.slick-dots>li
+{
+	width: 10%;
+	height: 15px;
+	float: left;
+}
+.slick-dots>li>button
+{
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: transparent;
+	outline: none;
+	transition-duration: 2s;
+}
+.slick-dots>.slick-active>button
+{
+	background: #5CADD3;
 }
 
 	/* SECTION */
