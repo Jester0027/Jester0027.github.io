@@ -149,26 +149,24 @@ header nav ul li a
 {
 	width: 1230px;
 	margin: auto;
+	margin-top: 80px;
 }
 
 	/* SLIDER */
 
 #slider
 {
-	padding-top: 80px;
+	top: 78px;
 	position: relative;
 	overflow-x: hidden;
 	width: 1600px;
 	margin: auto;
 	overflow: hidden;
+	box-shadow: 0px 5px 5px 0px grey;
 }
 #slider>div
 {
 	position: relative;
-}
-#slider>div img
-{
-	box-shadow: 0px 5px 5px grey;
 }
 #slider .webagency>div
 {
@@ -226,14 +224,14 @@ header nav ul li a
 .slick-prev
 {
 	left: -35px;
-	top: 48%;
+	top: 42%;
 	border-radius: 0 100% 100% 0;
 	padding-left: 35px;
 }
 .slick-next
 {
 	right: -35px;
-	top: 48%;
+	top: 42%;
 	border-radius: 100% 0 0 100%;
 	padding-right: 35px;
 }

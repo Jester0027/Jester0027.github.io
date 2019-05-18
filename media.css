@@ -24,6 +24,14 @@
     {
         font-size: 1.7em;
     }
+    .slick-prev
+    {
+        top: 40%;
+    }
+    .slick-next
+    {
+        top: 40%;
+    }
     #contact
     {
         margin-left: 625px;
@@ -94,7 +102,7 @@
 
     #contenu
     {
-        margin: 0px auto;
+        margin: 115px auto;
         width: 100%;
     }
     h2
@@ -106,7 +114,7 @@
 
     #slider
     {
-        padding-top: 118px;
+        top: 115px;
     }
     #slider .webagency>div
     {
@@ -131,14 +139,12 @@
     .slick-prev
     {
         left: -22.5px;
-        top: 57%;
         border-radius: 0 100% 100% 0;
         padding-left: 23px;
     }
     .slick-next
     {
         right: -22.5px;
-        top: 57%;
         border-radius: 100% 0 0 100%;
         padding-right: 23px;
     }
@@ -188,24 +194,15 @@
 
 @media screen and (max-width: 667px)
 {
-    #slider
-    {
-        height: 350px;
-    }
-    #slider .slick-list.draggable, #slider .slick-track
-    {
-        height: 350px;
-    }
     #slider img
     {
-        height: 200px;
+        height: 250px;
         object-fit: cover;
     }
     #slider .webagency>div
     {
         margin-left: 35px;
         width: 12%;
-        top: 10%;
     }
 
     #slider .webagency h1
@@ -219,14 +216,6 @@
     #slider .webagency button
     {
         font-size: 0.8em;
-    }
-    .slick-prev
-    {
-        top: 55%;
-    }
-    .slick-next
-    {
-        top: 55%;
     }
     #services
     {
@@ -244,10 +233,6 @@
 }
 @media screen and (max-width: 400px)
 {
-    #slider .webagency div
-    {
-        top: 10%;
-    }
     #slider .webagency h1
     {
         padding-bottom: 5px;
