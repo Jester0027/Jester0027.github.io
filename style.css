@@ -246,6 +246,7 @@ ul.slick-dots
 	height: 5px;
 	bottom: 0px;
 	background: rgba(143, 143, 143, 0.295);
+	overflow: hidden;
 }
 .slick-dots>li
 {
@@ -265,6 +266,7 @@ ul.slick-dots
 .slick-dots>.slick-active>button
 {
 	background: #5CADD3;
+	display: block;
 }
 
 	/* SECTION */
