@@ -10,7 +10,7 @@ $('.slick-prev').html('<');
 $('.slick-next').html('>');
 $('.slick-dots>li>button').html('');
 
-const listePortfolio = document.getElementById('liste_portfolio').getElementsByTagName('li');
+const listePortfolio = $('#liste_portfolio li');
 
 for(var i = 0 ; i < listePortfolio.length ; i++){
     listePortfolio[i].addEventListener("click", function(e){
