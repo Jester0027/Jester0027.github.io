@@ -7,7 +7,7 @@
 }
 @media screen and (max-width: 1230px)
 {
-    header .container
+    body>header .container
     {
         width: 950px;
     }
@@ -34,13 +34,12 @@
     }
     #contact
     {
-        margin-left: 625px;
     }
 }
 
 @media screen and (max-width: 950px)
 {
-    header .container
+    body>header .container
     {
         width: 768px;
     }
@@ -50,7 +49,6 @@
     }
     #contact
     {
-        margin-left: 450px;
     }
 }
 
@@ -63,32 +61,32 @@
 
     /* HEADER */
 
-    header
+    body>header
     {
         height: auto;
         width: 100%;
     }
-    header .container
+    body>header .container
     {
         width: 100%;
         flex-direction: column;
     }
-    header .container div
+    body>header .container div
     {
         width: 185px;
         margin: auto;
     }
-    header nav
+    body>header nav
     {
         width: 300px;
         margin: 0 auto 0 auto;
     }
-    header nav li, header nav .selected
+    body>header nav li, header nav .selected
     {
         border: none;
         padding-bottom: 20px;
     }
-    header nav .selected
+    body>header nav .selected
     {
         border-bottom: solid 3px #5CADD3;
     }
@@ -134,7 +132,11 @@
     {
         width: 45px;
         height: 45px;
-        font-size: 1.5em;
+        font-size: 1em;
+    }
+    #slider>button:hover
+    {
+        font-size: 1em;
     }
     .slick-prev
     {
@@ -151,6 +153,11 @@
     
     /* SERVICES */
 
+    #services
+    {
+        margin-top: -50px;
+        padding-top: 115px;
+    }
     #flex_services
     {
         display: flex;
@@ -170,6 +177,8 @@
     #portfolio
     {
         width: 100%;
+        margin-top: -50px;
+        padding-top: 115px;
     }
     #portfolio>div:first-child
     {
@@ -185,10 +194,15 @@
     #formbackground
     {
         width: 100%;
+        margin: auto;
+    }
+    #formbackground>iframe
+    {
+        width: 100%;
     }
     #contact
     {
-        margin-left: 52.5%;
+        margin: auto;
     }
 }
 
@@ -217,17 +231,16 @@
     {
         font-size: 0.8em;
     }
-    #services
-    {
-        padding-top: 20px;
-    }
     #formbackground
     {
-        background: none;
+        margin: auto;
+    }
+    #formbackground>iframe
+    {
+        display: none;
     }
     #contact
     {
-        margin: auto;
         background-color: rgba(158, 158, 158, 0.363);
     }
 }

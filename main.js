@@ -6,8 +6,8 @@ $('#slider').slick({
     pauseOnFocus: false,
     pauseOnHover: true
 });
-$('.slick-prev').html('<');
-$('.slick-next').html('>');
+$('.slick-prev').html('<i class="fas fa-chevron-left"></i>');
+$('.slick-next').html('<i class="fas fa-chevron-right"></i>');
 $('.slick-dots>li>button').html('');
 
 const listePortfolio = $('#liste_portfolio li');
@@ -20,9 +20,7 @@ for(var i = 0 ; i < listePortfolio.length ; i++){
                 listePortfolio[j].className = "";
             }
             
-            flecheElt.parentNode.removeChild(flecheElt);
             e.target.className = "selected";
-            e.target.insertAdjacentHTML('afterbegin', '<div id="fleche_portfolio"><img src="webagency_images/images/portfolio/selected.png" alt=""></div>');
         }
         else{}
     });

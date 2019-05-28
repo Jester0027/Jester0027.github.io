@@ -4,17 +4,23 @@
         <title>Webagency</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Webagency est un agence qui vous aide à réaliser vos projets webs">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="media.css">
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body>
+        <!-- ancre de l'accueil -->
+        <div id="accueil"></div>
+
         <!-- HEADER -->
+
         <header>
             <div class="container">
                 <div>
-                    <a href="index.html"><img src="webagency_images/images/logo.png" alt="" /></a>
+                    <a href="/"><img src="webagency_images/images/logo.png" alt="logo webagency" title="logo webagency" /></a>
                 </div>
                 <nav>
                     <ul>
@@ -26,149 +32,158 @@
                 </nav>
             </div>
         </header>
+
         <!-- SLIDER -->
+
         <div id="slider">
+            
+            <!-- Image 1 -->
             <div class="webagency">
-                <img src="webagency_images/images/slider/bg1.jpg" alt="">
+                <img src="webagency_images/images/slider/bg1.jpg" alt="L'agence de tous vos projets">
                 <div>
                     <h1><span>WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
                     <p>Vous avez un projet web ? La Webagency vous aide à le realiser !</p>
                     <button>plus d'infos</button>
                 </div>
             </div>
+
+            <!-- Image 2 -->
             <div>
                 <img src="webagency_images/images/slider/bg2.jpg" alt="">
             </div>
         </div>
-        <section id="contenu">
 
-            <!-- SECTION -->
-            <div>
-                <article id="services">
-                    <div id="titre_services">
-                        <h2>NOS SERVICES</h2>
-                        <div class="separator">
-                            <div class="round">
+        <!-- CONTENU -->
 
-                            </div>
-                        </div>
-                        <p>Nous proposons un pannel complet de services correspondants à vos demandes.</p>
+        <main id="contenu">
+
+            <section id="services">
+
+                <header>
+                    <h2>NOS SERVICES</h2>
+                    <div class="separator">
+                        <i class="fas fa-circle"></i>
+                        <!-- <div class="round">
+
+                        </div> -->
                     </div>
-                    <div id="flex_services">
-                        <div id="feature">
-    
-                        </div>
-                        <div>
-                            <dl>
-                                <dt>
-                                    <div class="div-icone"><div class="round"></div><i class="fas fa-chart-line fas-services"></i></div>
-                                    UX design
-                                </dt>
-                                <dd>Le User Experience Design permet une meilleure ergonomie et un confort optimal au visiteur de votre site web.</dd>
-                                <dt>
-                                    <div class="div-icone"><div class="round"></div><i class="fas fa-eye fas-services"></i></div> 
-                                    UI design
-                                </dt>
-                                <dd>Nous vous proposons une interface WYSIWYG ergonomique qui vous permet de modifier le contenu de votre site.</dd>
-                                <dt>
-                                    <div class="div-icone"><div class="round"></div><i class="fas fa-chart-pie fas-services"></i></div>
-                                    SEO
-                                </dt>
-                                <dd>Nous travaillons pour que votre site bénéficie d'un puissant référencement dans les moteurs de recherche les plus populaires.</dd>
-                            </dl>
-                        </div>
-                    </div>
-                </article>
-                <article id="portfolio">
+                    <p>Nous proposons un pannel complet de services correspondants à vos demandes.</p>
+                </header>
+
+                <div id="flex_services">
+
+                    <div id="feature"></div>
+
                     <div>
-                        <h2>NOS PROJETS</h2>
-                        <div class="separator">
-                                <div class="round">
-                                    
-                                </div>
-                            </div>
-                        <p>Une sélection de nos plus grands projets.</p>
-                        <ul id="liste_portfolio">
-                            <li class="selected">
-                                <div id="fleche_portfolio"><img src="webagency_images/images/portfolio/selected.png" alt=""></div>
-                                All works
-                            </li>
-                            <li>Creative</li>
-                            <li>Corporate</li>
-                            <li>Portfolio</li>
-                        </ul>
+                        <dl>
+                            <dt>
+                                <div class="div-icone"><div class="round"></div><i class="fas fa-chart-line fas-services"></i></div>
+                                UX design
+                            </dt>
+                            <dd>Le User Experience Design permet une meilleure ergonomie et un confort optimal au visiteur de votre site web.</dd>
+                            <dt>
+                                <div class="div-icone"><div class="round"></div><i class="fas fa-eye fas-services"></i></div> 
+                                UI design
+                            </dt>
+                            <dd>Nous vous proposons une interface WYSIWYG ergonomique qui vous permet de modifier le contenu de votre site.</dd>
+                            <dt>
+                                <div class="div-icone"><div class="round"></div><i class="fas fa-chart-pie fas-services"></i></div>
+                                SEO
+                            </dt>
+                            <dd>Nous travaillons pour que votre site bénéficie d'un puissant référencement dans les moteurs de recherche les plus populaires.</dd>
+                        </dl>
                     </div>
-                    <div class="conteneur-portfolio">
-                        <div class="apercu">
-                            <img src="webagency_images/images/portfolio/01.jpg" alt="">
-                            <div class="info">
-                                <h3>Gropticien</h3>
-                                <p>Boutique en ligne de lunettes</p>
-                                <div class="div-icone"><i class="fas fa-glasses"></i></div>
-                            </div>
-                        </div>
-                        <div class="apercu">
-                            <img src="webagency_images/images/portfolio/02.jpg" alt="">
-                            <div class="info">
-                                <h3>Chocolaterie Rabbit</h3>
-                                <p>Spécialisés dans les lapins de Pâques</p>
-                                <div class="div-icone"><i class="fas fa-cookie-bite"></i></div>
-                            </div>
-                        </div>
-                        <div class="apercu">
-                            <img src="webagency_images/images/portfolio/03.jpg" alt="">
-                            <div class="info">
-                                <h3>Pompadour</h3>
-                                <p>Salon de coiffure de père en fils</p>
-                                <div class="div-icone"><i class="fas fa-cut"></i></div>
-                            </div>
-                        </div>
-                        <div class="apercu">
-                            <img src="webagency_images/images/portfolio/04.jpg" alt="">
-                            <div class="info">
-                                <h3>CMMI</h3>
-                                <p>Communauté du Montage de Meubles Ikea</p>
-                                <div class="div-icone"><i class="fas fa-chair"></i></div>
-                            </div>
-                        </div>
-                        <div class="apercu">
-                            <img src="webagency_images/images/portfolio/05.jpg" alt="">
-                            <div class="info">
-                                <h3>GreenMarkt</h3>
-                                <p>Centre commercial ecologique</p>
-                                <div class="div-icone"><i class="fas fa-leaf"></i></div>
-                            </div>
-                        </div>
-                        <div class="apercu">
-                            <img src="webagency_images/images/portfolio/06.jpg" alt="">
-                            <div class="info">
-                                <h3>Club Monde</h3>
-                                <p>Entreprise mondiale de séjours en vacances</p>
-                                <div class="div-icone"><i class="fas fa-globe-asia"></i></div>
-                            </div>
-                        </div>
-                        <div class="apercu">
-                            <img src="webagency_images/images/portfolio/07.jpg" alt="">
-                            <div class="info">
-                                <h3>KCST</h3>
-                                <p> Site web du programme spatial nord-coréen</p>
-                                <div class="div-icone"><i class="fas fa-space-shuttle"></i></div>
-                            </div>
-                        </div>
-                        <div class="apercu">
-                            <img src="webagency_images/images/portfolio/08.jpg" alt="">
-                            <div class="info">
-                                <h3>NordPresse</h3>
-                                <p>Journal de presse satirique</p>
-                                <div class="div-icone"><i class="fas fa-newspaper"></i></div>
-                            </div>
-                        </div>
-                    </div>                 
-                </article>
-            </div>
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <header>
+                    <h2>NOS PROJETS</h2>
+
+                    <div class="separator"><i class="fas fa-circle"></i></div>
+
+                    <p>Une sélection de nos plus grands projets.</p>
+                    <ul id="liste_portfolio">
+                        <li class="selected">
+                            All works
+                            <div class="fleche_portfolio"></div>
+                        </li>
+                        <li>Creative <div class="fleche_portfolio"></div></li>
+                        <li>Corporate <div class="fleche_portfolio"></div></li>
+                        <li>Portfolio <div class="fleche_portfolio"></div></li>
+                    </ul>
+                </header>
+                <div class="conteneur-portfolio">
+                    <figure>
+                        <img src="webagency_images/images/portfolio/01.jpg" alt="Gropticien">
+                        <figcaption>
+                            <h3>Gropticien</h3>
+                            <p>Boutique en ligne de lunettes</p>
+                            <div class="div-icone"><i class="fas fa-glasses"></i></div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="webagency_images/images/portfolio/02.jpg" alt="Chocolaterie Rabbit">
+                        <figcaption>
+                            <h3>Chocolaterie Rabbit</h3>
+                            <p>Spécialisés dans les lapins de Pâques</p>
+                            <div class="div-icone"><i class="fas fa-cookie-bite"></i></div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="webagency_images/images/portfolio/03.jpg" alt="Pompadour">
+                        <figcaption>
+                            <h3>Pompadour</h3>
+                            <p>Salon de coiffure de père en fils</p>
+                            <div class="div-icone"><i class="fas fa-cut"></i></div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="webagency_images/images/portfolio/04.jpg" alt="CMMI">
+                        <figcaption>
+                            <h3>CMMI</h3>
+                            <p>Communauté du Montage de Meubles Ikea</p>
+                            <div class="div-icone"><i class="fas fa-chair"></i></div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="webagency_images/images/portfolio/05.jpg" alt="GreenMarkt">
+                        <figcaption>
+                            <h3>GreenMarkt</h3>
+                            <p>Centre commercial ecologique</p>
+                            <div class="div-icone"><i class="fas fa-leaf"></i></div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="webagency_images/images/portfolio/06.jpg" alt="Club Monde">
+                        <figcaption>
+                            <h3>Club Monde</h3>
+                            <p>Entreprise mondiale de séjours en vacances</p>
+                            <div class="div-icone"><i class="fas fa-globe-asia"></i></div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="webagency_images/images/portfolio/07.jpg" alt="KCST">
+                        <figcaption>
+                            <h3>KCST</h3>
+                            <p> Site web du programme spatial nord-coréen</p>
+                            <div class="div-icone"><i class="fas fa-space-shuttle"></i></div>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="webagency_images/images/portfolio/08.jpg" alt="NordPresse">
+                        <figcaption>
+                            <h3>NordPresse</h3>
+                            <p>Journal de presse satirique</p>
+                            <div class="div-icone"><i class="fas fa-newspaper"></i></div>
+                        </figcaption>
+                    </figure>
+                </div>                 
+            </section>
     
             <!-- FORMULAIRE -->
             <div id="formbackground"> <!-- bloc du background -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14852.06650374141!2d2.341098000516216!3d48.84868982643965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sbe!4v1558693259044!5m2!1sfr!2sbe" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 <div id="contact"> <!-- bloc du formulaire -->
                     <form>
                         <h3>Contact info</h3>
@@ -185,7 +200,7 @@
                     </form>
                 </div>
             </div>
-        </section>
+        </main>
         
         
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
