@@ -48,6 +48,10 @@ table {
 	border-spacing: 0;
 }
 
+/*
+	FIN RESET CSS
+*/
+
 
 @font-face
 {
@@ -89,7 +93,7 @@ body>header
 	background-color: white;
 	width: 100%;
 	height: 75px;
-	z-index: 2;
+	z-index: 3;
 	box-shadow: 0px 2px 5px grey;
 	overflow-x: hidden;
 }
@@ -98,7 +102,7 @@ body>header .container
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 1230px;
+	width: 1300px;
 	margin: auto;
 }
 body>header .container div
@@ -147,7 +151,7 @@ body>header nav ul li a
 
 #contenu
 {
-	width: 1230px;
+	width: 1300px;
 	margin: auto;
 	margin-top: 80px;
 }
@@ -308,30 +312,27 @@ article
 }
 #flex_services>div:last-child
 {
-	padding-top: 80px;
+	padding-top: 95px;
+	padding-left: 70px;
 }
 #feature
 {
-	background: url('webagency_images/images/main-feature.png') no-repeat center;
+	background: url('../webagency_images/images/main-feature.png') no-repeat center;
 }
-#services dl
+
+/*  */
+#flex_services>div:last-child>div, #flex_services>div:last-child p
 {
-	padding-top: 15px;
-	padding-left: 70px;
-}
-#services dl dt, #services dl dd
-{
-	padding-top: 15px;
 	padding: 10px 0 0 38px;
 }
-#services dl dt
+#flex_services>div:last-child>div
 {
 	font-size: 1.5em;
 	font-weight: bold;
 	position: relative;
 	padding-top: 30px;
 }
-#services dl dd
+#flex_services>div:last-child p
 {
 	line-height: 1.8;
 }
@@ -346,12 +347,15 @@ article
 	border-radius: 100%;
 	text-align: center;
 }
-.div-icone .round
+.div-icone .fa-circle
 {
 	position: absolute;
 	margin-top: 0;
-	right: -12px;
-	top: 21px;
+	color: #5CADD3;
+	border: solid 5px white;
+	right: -12.5px;
+	font-size: 16px;
+	top: 20px;
 }
 .fas-services
 {
@@ -385,7 +389,7 @@ article
 #liste_portfolio>li
 {
 	background-color: rgb(223, 223, 223);
-	width: 100%;
+	width: 25%;
 	padding: 15px 5px 12px 5px;
 	font-size: 0.9em;
 	font-weight: bold;
@@ -514,20 +518,25 @@ article
 	margin-left: 875px;
 	background-color: rgba(255, 255, 255, 0.75);
 	padding: 1px 20px 15px 15px;
+	z-index: 2;
 }
-form>h3
+form h4
 {
 	font-size: 1.5em;
 	margin: 15px 0 15px 0;
 	font-weight: bolder;
 }
-form>p
+form address span
+{
+	font-weight: bold;
+}
+form address
 {
 	padding: 0 0 0 0;
 	margin: 0 0 5px 0;
 	color: rgb(65, 65, 65);
 	font-size: 0.82em;
-	line-height: 1;
+	line-height: 1.5;
 }
 input, textarea
 {
@@ -556,6 +565,17 @@ textarea
 {
 	cursor: pointer;
 }
+#overlay
+{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 100px);
+	z-index: 1;
+	background: rgba(166, 146, 255, 0.35);
+	pointer-events: none;
+}
 
 
 /* SEPARATOR */
@@ -571,7 +591,7 @@ textarea
 	position: relative;
 	text-align: center;
 }
-.separator>i
+.separator .fa-circle
 {
 	position: absolute;
 	color: #5CADD3;

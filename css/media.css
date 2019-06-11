@@ -5,15 +5,15 @@
         width: 100%;
     }
 }
-@media screen and (max-width: 1230px)
+@media screen and (max-width: 1300px)
 {
     body>header .container
     {
-        width: 950px;
+        width: 100%;
     }
     #contenu
     {
-        width: 950px;
+        width: 100%;
     }
     #slider .webagency>div
     {
@@ -34,21 +34,15 @@
     }
     #contact
     {
+        margin-left: 625px;
     }
 }
 
 @media screen and (max-width: 950px)
 {
-    body>header .container
-    {
-        width: 768px;
-    }
-    #contenu
-    {
-        width: 768px;
-    }
     #contact
     {
+        margin-left: 450px;
     }
 }
 
@@ -165,11 +159,12 @@
     }
     #flex_services>div
     {
-        width: 100%;
+        width: auto;
+        padding-right: 5px;
     }
-    #titre_services
+    #services>header
     {
-        width: 100%;
+        width: auto;
     }
 
     /* PORTFOLIO */
@@ -177,14 +172,13 @@
     #portfolio
     {
         width: 100%;
-        margin-top: -50px;
         padding-top: 115px;
     }
-    #portfolio>div:first-child
+    #portfolio>header
     {
         width: 100%;
     }
-    .apercu .info
+    .conteneur-portfolio>figure>figcaption
     {
         opacity: 1;
     }
@@ -202,7 +196,7 @@
     }
     #contact
     {
-        margin: auto;
+        margin-left: 350px;
     }
 }
 
@@ -233,7 +227,7 @@
     }
     #formbackground
     {
-        margin: auto;
+        margin: 50px auto;
     }
     #formbackground>iframe
     {
@@ -242,6 +236,12 @@
     #contact
     {
         background-color: rgba(158, 158, 158, 0.363);
+        position: relative;
+        margin: auto;
+    }
+    #overlay
+    {
+        display: none;
     }
 }
 @media screen and (max-width: 400px)
@@ -264,6 +264,7 @@
 {
     #liste_portfolio
     {
-        width: 100%;
+        width: 90%;
+        height: 55px;
     }
 }

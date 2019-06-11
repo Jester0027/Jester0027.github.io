@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
+
     <head>
         <title>Webagency</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Webagency est un agence qui vous aide à réaliser vos projets webs">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="media.css">
+        <link rel="icon" type="image/png" href="../webagency_images/images/logo-fav-icon.png" />
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/media.css">
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
+
     <body>
         <!-- ancre de l'accueil -->
         <div id="accueil"></div>
 
-        <!-- HEADER -->
+        <!-- 
+            HEADER 
+            sert de fond, largeur 100% pour que le fond prenne toute la page
+        -->
 
         <header>
+            <!-- 
+                container largeur fixe centré
+                
+                contient le logo et le nav en display flex
+            -->
             <div class="container">
                 <div>
                     <a href="/"><img src="webagency_images/images/logo.png" alt="logo webagency" title="logo webagency" /></a>
@@ -49,13 +59,25 @@
 
             <!-- Image 2 -->
             <div>
-                <img src="webagency_images/images/slider/bg2.jpg" alt="">
+                <img src="webagency_images/images/slider/bg2.jpg" alt="Image du slider 2">
             </div>
+
         </div>
 
-        <!-- CONTENU -->
+        <!-- 
+            CONTENU
+
+            3 parties
+                - les services
+                - le portfolio
+                - le formulaire de contact
+        -->
 
         <main id="contenu">
+
+            <!--
+                SERVICES
+            -->
 
             <section id="services">
 
@@ -63,40 +85,57 @@
                     <h2>NOS SERVICES</h2>
                     <div class="separator">
                         <i class="fas fa-circle"></i>
-                        <!-- <div class="round">
-
-                        </div> -->
                     </div>
                     <p>Nous proposons un pannel complet de services correspondants à vos demandes.</p>
                 </header>
 
                 <div id="flex_services">
 
+                    <!-- image d'ordinateur -->
                     <div id="feature"></div>
 
+                    <!-- les trois services UX, UI et SEO -->
                     <div>
-                        <dl>
-                            <dt>
-                                <div class="div-icone"><div class="round"></div><i class="fas fa-chart-line fas-services"></i></div>
-                                UX design
-                            </dt>
-                            <dd>Le User Experience Design permet une meilleure ergonomie et un confort optimal au visiteur de votre site web.</dd>
-                            <dt>
-                                <div class="div-icone"><div class="round"></div><i class="fas fa-eye fas-services"></i></div> 
-                                UI design
-                            </dt>
-                            <dd>Nous vous proposons une interface WYSIWYG ergonomique qui vous permet de modifier le contenu de votre site.</dd>
-                            <dt>
-                                <div class="div-icone"><div class="round"></div><i class="fas fa-chart-pie fas-services"></i></div>
-                                SEO
-                            </dt>
-                            <dd>Nous travaillons pour que votre site bénéficie d'un puissant référencement dans les moteurs de recherche les plus populaires.</dd>
-                        </dl>
+                        <!-- selecteur commun des icones fontawesome : .fas-services -->
+                        <div>
+                            <div class="div-icone"><i class="fas fa-circle"></i><i class="fas fa-chart-line fas-services"></i></div>
+                            <strong>UX design</strong>
+                        </div>
+                        <p>
+                            Le User Experience Design permet une meilleure ergonomie et un confort optimal au visiteur de votre site web.
+                        </p>
+
+                        <div>
+                            <div class="div-icone"><i class="fas fa-circle"></i><i class="fas fa-cubes fas-services"></i></div> 
+                            <strong>UI design</strong>
+                        </div>
+                        <p>
+                            Nous vous proposons une interface WYSIWYG ergonomique qui vous permet de modifier le contenu de votre site.
+                        </p>
+
+                        <div>
+                            <div class="div-icone"><i class="fas fa-circle"></i><i class="fas fa-chart-pie fas-services"></i></div>
+                            <strong>SEO</strong>
+                        </div>
+
+                        <p>
+                            Nous travaillons pour que votre site bénéficie d'un puissant référencement dans les moteurs de recherche les plus populaires.
+                        </p>
+
                     </div>
+
                 </div>
+
             </section>
 
+            <!--
+                PORTFOLIO
+            -->
+
             <section id="portfolio">
+
+                <!-- titre + selecteur -->
+
                 <header>
                     <h2>NOS PROJETS</h2>
 
@@ -113,6 +152,9 @@
                         <li>Portfolio <div class="fleche_portfolio"></div></li>
                     </ul>
                 </header>
+
+                <!-- liste du portfolio -->
+                
                 <div class="conteneur-portfolio">
                     <figure>
                         <img src="webagency_images/images/portfolio/01.jpg" alt="Gropticien">
@@ -139,11 +181,11 @@
                         </figcaption>
                     </figure>
                     <figure>
-                        <img src="webagency_images/images/portfolio/04.jpg" alt="CMMI">
+                        <img src="webagency_images/images/portfolio/04.jpg" alt="Communauté du Montage de Meubles Ikea">
                         <figcaption>
                             <h3>CMMI</h3>
                             <p>Communauté du Montage de Meubles Ikea</p>
-                            <div class="div-icone"><i class="fas fa-chair"></i></div>
+                            <div class="div-icone"><i class="far fa-eye"></i></div>
                         </figcaption>
                     </figure>
                     <figure>
@@ -163,10 +205,10 @@
                         </figcaption>
                     </figure>
                     <figure>
-                        <img src="webagency_images/images/portfolio/07.jpg" alt="KCST">
+                        <img src="webagency_images/images/portfolio/07.jpg" alt="Site web du programme spatial nord-coréen">
                         <figcaption>
                             <h3>KCST</h3>
-                            <p> Site web du programme spatial nord-coréen</p>
+                            <p>Site web du programme spatial nord-coréen</p>
                             <div class="div-icone"><i class="fas fa-space-shuttle"></i></div>
                         </figcaption>
                     </figure>
@@ -178,34 +220,55 @@
                             <div class="div-icone"><i class="fas fa-newspaper"></i></div>
                         </figcaption>
                     </figure>
-                </div>                 
+                </div>
             </section>
     
-            <!-- FORMULAIRE -->
-            <div id="formbackground"> <!-- bloc du background -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14852.06650374141!2d2.341098000516216!3d48.84868982643965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sbe!4v1558693259044!5m2!1sfr!2sbe" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                <div id="contact"> <!-- bloc du formulaire -->
+            <!-- 
+                FORMULAIRE
+
+                en 3 blocs
+                    - iframe de google
+                    - conteneur du formulaire 
+                    - overlay bleu
+            -->
+            <section id="formbackground"> <!-- bloc du background -->
+                
+                <!-- iframe googlemaps -->
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14852.06650374141!2d2.341098000516216!3d48.84868982643965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sbe!4v1558693259044!5m2!1sfr!2sbe" width="600" height="450" style="border:0" allowfullscreen></iframe>
+
+                <!-- bloc du formulaire -->
+
+                <div id="contact">
                     <form>
-                        <h3>Contact info</h3>
-                        <p><strong>WebAgency SAS</strong></p>
-                        <p>25 Rue d'Hauteville 75010 Paris</p>
-                        <p>Tel : 01 02 03 04 05</p>
+                        <!-- titre et addresse -->
+                        <h4>Contact info</h4>
+                        <address>
+                            <span>WebAgency SAS</span><br>
+                            25 Rue d'Hauteville 75010 Paris <br>
+                            Tel : <a href="tel:+32102030405">01 02 03 04 05</a>
+                        </address>
         
+                        <!-- blocs des entrées -->
                         <input type="text" name="text" placeholder="Name">
-                        <input type="email" name="email" placeholder="Email">
+                        <input type="email" name="email" placeholder="Email" required>
                         <input type="text" name="subject" placeholder="Subject">
-                        <textarea name="message" rows="10" placeholder="Message"></textarea>
+                        <textarea name="message" rows="10" placeholder="Message" required></textarea>
         
                         <input id="bouton" type="submit" value="Send Message">
                     </form>
                 </div>
-            </div>
+
+                <!-- overlay bleu -->
+                
+                <div id="overlay"></div>
+            </section>
         </main>
         
         
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="slick/slick.min.js"></script>
-        <script src="main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
