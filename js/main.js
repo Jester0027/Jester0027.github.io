@@ -6,9 +6,12 @@ $('#slider').slick({
     pauseOnFocus: false,
     pauseOnHover: true
 });
-$('.slick-prev').html('<i class="fas fa-chevron-left"></i>');
-$('.slick-next').html('<i class="fas fa-chevron-right"></i>');
+$('.slick-prev').html('<i class="fas fa-chevron-left" aria-hidden="true"></i>');
+$('.slick-next').html('<i class="fas fa-chevron-right" aria-hidden="true"></i>');
+$('.slick-arrow').attr('aria-hidden', true);
 $('.slick-dots>li>button').html('');
+$('.slick-dots>li>button').attr('aria-hidden', true);
+$('.slick-dots').attr('aria-hidden', true);
 
 const listePortfolio = $('#liste_portfolio li');
 

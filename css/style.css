@@ -57,8 +57,8 @@ table {
 {
 	font-family: 'fontawesome';
 	src: url('webagency_images/fonts/fontawesome-webfont.eot') format('eot'),
-	url('webagency_images/fonts/fontawesome-webfont.woff') format('woff'),
-	url('webagency_images/fonts/fontawesome-webfont.ttf') format('truetype'),
+	/*url('webagency_images/fonts/fontawesome-webfont.woff') format('woff'),*/
+	/*url('webagency_images/fonts/fontawesome-webfont.ttf') format('truetype'),*/
 	url('webagency_images/fonts/fontawesome-webfont.svg') format('svg');
 }
 
@@ -549,6 +549,7 @@ input, textarea
 textarea
 {
 	resize: none;
+	font-family: 'fontawesome', sans-serif;
 }
 #bouton
 {
