@@ -394,15 +394,15 @@ article
 	font-size: 0.9em;
 	font-weight: bold;
 	color: rgb(92, 92, 92);
+	position: relative;
 }
 #liste_portfolio>.selected
 {
 	background-color: #5CADD3;
 	border-bottom: solid 4px #4494BB;
 	color: white;
-	position: relative;
 }
-#liste_portfolio>.selected>.fleche_portfolio
+#liste_portfolio>.selected>.fleche_portfolio, #liste_portfolio>li:hover>.fleche_portfolio
 {
 	position: absolute;
 	top: 100%;
@@ -418,6 +418,9 @@ article
 #liste_portfolio>li:hover
 {
 	cursor: pointer;
+	background-color: #5CADD3;
+	border-bottom: solid 4px #4494BB;
+	color: white;
 }
 #liste_portfolio>li:first-child
 {
